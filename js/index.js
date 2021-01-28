@@ -33,7 +33,12 @@ function roll(dice){
     const finalRoll = diceroll + mod;            
 
     //Subscrição de dados.
-    if(maiorCheck.checked){
+    if(qtd < 0){
+        document.getElementById("resultado").style.color = "black";
+        document.getElementById("roll").innerHTML = "Você colocou um número negativo de dados. Nenhum resultado obtido.";
+        document.getElementById("resultado").innerHTML = "Coloque um número positivo no campo 'Quantidade'.";
+    }
+    else if(maiorCheck.checked){
         if(diceroll === 1 * qtd){
         document.getElementById("resultado").style.color = "red";
         document.getElementById("roll").innerHTML = "Você rolou " + qtd + "d" + dice + "[" + diceroll + sinal + mod + "], resultando um:";
@@ -72,5 +77,4 @@ function roll(dice){
         document.getElementById("roll").innerHTML = "Você rolou " + qtd + "d" + dice + "[" + diceroll + sinal + mod + "], resultando um:";
         document.getElementById("resultado").innerHTML = finalRoll; 
     }
-
 }
