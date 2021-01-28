@@ -8,7 +8,6 @@ function roll(dice){
     const modF = parseInt(modInput);
     let diceroll = 0;
     let sinal = "";
-    let qtdF = 0;
     let mod = 0;
     let qtd = 0;
 
@@ -21,7 +20,8 @@ function roll(dice){
     else{sinal = "";}
 
     //Cálculo de Rolagem
-    if(quant === ""){qtd = 1}
+    if(quant === ""){qtd = 1;}
+    else if(quant === "0"){qtd = 1;}
     else{qtd = quantValue;}
 
     for(let i = 0; i < qtd; i++){
