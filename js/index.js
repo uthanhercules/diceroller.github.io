@@ -22,6 +22,7 @@ function roll(dice){
     //Cálculo de Rolagem
     if(quant === ""){qtd = 1;}
     else if(quant === "0"){qtd = 1;}
+    else if(quant === "-0"){qtd = 1;}
     else{qtd = quantValue;}
 
     for(let i = 0; i < qtd; i++){
