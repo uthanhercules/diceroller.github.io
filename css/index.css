@@ -22,15 +22,26 @@ table{
 }
 
 /*Cabeçalho*/
+@media only screen and (min-width: 601px){
+    header h1{
+        font-size: 24px;
+        font-weight: bold;
+        color: rgb(212, 194, 24);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    header h1{
+        font-weight: bold;
+        color: rgb(212, 194, 24);
+        font-size: 18px;
+    }
+}
+
 header{
     display: flex;
     height: 10vh;
     background-color: rgb(23, 5, 66);
-}
-
-header h1{
-    font-weight: bold;
-    color: rgb(212, 194, 24);
 }
 
 /*Corpo*/
@@ -40,36 +51,70 @@ main{
     height: 80vh;
 }
 
-.dados{
-    width: 213px;
+@media only screen and (min-width: 421px){
+    #caixaResultado{
+        display: flex;
+        width: 400px;
+        height: 80px;
+        background-color: white;
+        border-style: solid;
+        border-width: 0.1px;
+        border-radius: 10px;
+        margin-top: 25px;
+    }
+
+    .rolagemFinal{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    #resultado{
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
+    }
 }
 
-.rolagemFinal{
-    display: flex;
-    flex-direction: column;
-    width: 400px;
+@media only screen and (max-width: 420px){
+    #caixaResultado{
+        display: flex;
+        width: 300px;
+        height: 80px;
+        background-color: white;
+        border-style: solid;
+        border-width: 0.1px;
+        border-radius: 10px;
+        margin-top: 25px;
+    }
+
+    .rolagemFinal{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    #resultado{
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .textoBase{
+        font-size: 12px;
+    }
+
+}
+
+.dados{
+    width: 213px;
 }
 
 .quantMod{
     display: flex;
     flex-direction: column;
-}
-
-#resultado{
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
-}
-
-#caixaResultado{
-    display: flex;
-    width: 400px;
-    height: 80px;
-    background-color: white;
-    border-style: solid;
-    border-width: 0.1px;
-    border-radius: 10px;
-    margin-top: 25px;
 }
 
 /*Rodapé*/
@@ -79,7 +124,16 @@ footer{
     display: flex;
 }
 
-footer p{
-    font-size: 14px;
-    color: rgb(212, 194, 24);
+@media only screen and (min-width: 421px){
+    footer p{
+        font-size: 14px;
+        color: rgb(212, 194, 24);
+    }
+}
+
+@media only screen and (max-width: 420px){
+    footer p{
+        font-size: 10px;
+        color: rgb(212, 194, 24);
+    }
 }
