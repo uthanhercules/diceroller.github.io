@@ -1,17 +1,85 @@
+/*Configurações Gerais*/
 *{
-    font-family: sans-serif;
-    text-align: center;
-}
-
-#resultado{
-    font-weight: 700;
-}
-
-.dsc{
-    font-size: 10px;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
 }
 
 button{
-    border-radius: 4px;
-    height: 38px;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+table{
+    font-size: 14px;
+}
+
+/*Cabeçalho*/
+header{
+    display: flex;
+    height: 10vh;
+    background-color: rgb(23, 5, 66);
+}
+
+header h1{
+    font-weight: bold;
+    color: rgb(212, 194, 24);
+}
+
+/*Corpo*/
+main{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.dados{
+    width: 213px;
+}
+
+.rolagemFinal{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.quantMod{
+    display: flex;
+    flex-direction: column;
+}
+
+#resultado{
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+#caixaResultado{
+    display: flex;
+    width: 400px;
+    height: 80px;
+    background-color: white;
+    border-style: solid;
+    border-width: 0.1px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+/*Rodapé*/
+footer{
+    height: 10vh;
+    background-color: rgb(23, 5, 66);
+    display: flex;
+}
+
+footer p{
+    font-size: 14px;
+    color: rgb(212, 194, 24);
 }

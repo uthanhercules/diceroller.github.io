@@ -6,41 +6,53 @@
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Dado Simples Online</h1>
-    <br>
-    <p id="roll">Sua rolagem aparecerá aqui</p>
-    <p id="resultado"></p>
-    <br>
-    <br>
-    <button type="button" onclick="roll(4)">D4</button>
-    <button type="button" onclick="roll(6)">D6</button>
-    <button type="button" onclick="roll(8)">D8</button>
-    <button type="button" onclick="roll(10)">D10</button>
-    <button type="button" onclick="roll(12)">D12</button>
-    <button type="button" onclick="roll(20)">D20</button>
-    <button type="button" onclick="roll(24)">D24</button>
-    <button type="button" onclick="roll(100)">D100</button> 
-    <br>
-    <br>
-    <input id="quantidade" type="number" min="0" placeholder="Quantidade">
-    <input id="modificador" type="number" placeholder="Modificador">
-    <br> 
-    <br>
-    <p class="dsc">Caso deixe o valor de <b>Quantidade</b> vazio, considera-se 1.</p>
-    <p class="dsc">Caso deixe o valor de <b>Modificador</b> vazio, considera-se 0.</p>
-    <br>
-    <p>Seu sistema de crítical é com o maior ou com o menor número?</p>
-    <table style="margin: auto; font-size: 12px;">
-        <tr>
-            <th>Maior</th>
-            <th><input id="maior" name="maiormenor" type="radio"></th>
-            <th>Menor</th>
-            <th><input id="menor" name="maiormenor" type="radio"></th>
-        </tr>
-    </table>
-    <br>
-    <p style="font-size: 10px;">Criado por Uthan Hercules para estudos.</p>  
+    <header>
+        <h1>DADO SIMPLES ONLINE</h1>
+    </header>
+    <main>
+        <section class="rolagemFinal">
+            <p id="roll">Sua rolagem aparecerá aqui</p>
+            <div id="caixaResultado">
+                <p id="resultado"></p>
+            </div>
+        </section>
+        <section class="dados">
+            <button type="button" onclick="roll(4)">D4</button>
+            <button type="button" onclick="roll(6)">D6</button>
+            <button type="button" onclick="roll(8)">D8</button>
+            <button type="button" onclick="roll(10)">D10</button>
+            <button type="button" onclick="roll(12)">D12</button>
+            <button type="button" onclick="roll(20)">D20</button>
+            <button type="button" onclick="roll(24)">D24</button>
+            <button type="button" onclick="roll(100)">D100</button>
+        </section>
+        <section class="quantMod">
+            <input id="quantidade" type="number" min="0" placeholder="Quantidade">
+            <input id="modificador" type="number" placeholder="Modificador">
+        </section>
+        <section>
+            <p class="dsc">Caso deixe o valor de <b>Quantidade</b> vazio, considera-se 1.</p>
+            <p class="dsc">Caso deixe o valor de <b>Modificador</b> vazio, considera-se 0.</p>
+        </section>
+        <section>
+            <p>Seu sistema de crítical é com o maior ou com o menor número?</p>
+            <br>
+            <table>
+                <tr>
+                    <th>Maior</th>
+                    <th><input id="maior" name="maiormenor" type="radio"></th>
+                    <th>Menor</th>
+                    <th><input id="menor" name="maiormenor" type="radio"></th>
+                </tr>
+            </table>
+        </section>
+    </main> 
+    <footer>
+        <p>Criado por Uthan Hercules para estudos.</p> 
+    </footer>
 </body>
 </html>
