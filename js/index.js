@@ -6,10 +6,8 @@ function roll(dice){
     const menorCheck = document.getElementById("menor");
     const quantValue = parseInt(quant);
     const modF = parseInt(modInput);
-    let diceroll = 0;
+    let mod = 0, qtd = 0, diceroll = 0;
     let sinal = "";
-    let mod = 0;
-    let qtd = 0;
 
     //Modificador
     if(modInput === ""){mod = 0;}
@@ -38,25 +36,25 @@ function roll(dice){
         document.getElementById("caixaResultado").style.backgroundColor = "white";
         document.getElementById("resultado").style.color = "black";
         document.getElementById("roll").innerHTML = "Você colocou um número negativo de dados. Nenhum resultado obtido.";
-        document.getElementById("resultado").innerHTML = "Coloque um número positivo no campo 'Quantidade'.";
+        document.getElementById("resultado").innerHTML = 0;
     }
     else if(maiorCheck.checked){
         if(diceroll === 1 * qtd){
         document.getElementById("caixaResultado").style.backgroundColor = "red";
         document.getElementById("resultado").style.color = "black";
-        document.getElementById("roll").innerHTML = "Você rolou " + qtd + "d" + dice + "[" + diceroll + sinal + mod + "], resultando um:";
+        document.getElementById("roll").innerHTML = `Você rolou ${qtd}d${dice}[${diceroll}${sinal}${mod}], resultando um:`;
         document.getElementById("resultado").innerHTML = "ERRO CRÍTICO!";
         }
         else if(diceroll === dice * qtd){
         document.getElementById("caixaResultado").style.backgroundColor = "green";
         document.getElementById("resultado").style.color = "white";
-        document.getElementById("roll").innerHTML = "Você rolou " + qtd + "d" + dice + "[" + diceroll + sinal + mod + "], resultando um:";
+        document.getElementById("roll").innerHTML = `Você rolou ${qtd}d${dice}[${diceroll}${sinal}${mod}], resultando um:`;
         document.getElementById("resultado").innerHTML = "ACERTO CRÍTICO!";               
         }
         else{
         document.getElementById("caixaResultado").style.backgroundColor = "white";
         document.getElementById("resultado").style.color = "black";
-        document.getElementById("roll").innerHTML = "Você rolou " + qtd + "d" + dice + "[" + diceroll + sinal + mod + "], resultando um:";
+        document.getElementById("roll").innerHTML = `Você rolou ${qtd}d${dice}[${diceroll}${sinal}${mod}], resultando um:`;
         document.getElementById("resultado").innerHTML = finalRoll;
         }    
     }
@@ -64,26 +62,26 @@ function roll(dice){
         if(diceroll === 1 * qtd){
         document.getElementById("caixaResultado").style.backgroundColor = "green";
         document.getElementById("resultado").style.color = "white";
-        document.getElementById("roll").innerHTML = "Você rolou " + qtd + "d" + dice + "[" + diceroll + sinal + mod + "], resultando um:";
+        document.getElementById("roll").innerHTML = `Você rolou ${qtd}d${dice}[${diceroll}${sinal}${mod}], resultando um:`;
         document.getElementById("resultado").innerHTML = "ACERTO CRÍTICO!";
         }
         else if(diceroll === dice * qtd){
         document.getElementById("caixaResultado").style.backgroundColor = "red";
         document.getElementById("resultado").style.color = "black";
-        document.getElementById("roll").innerHTML = "Você rolou " + qtd + "d" + dice + "[" + diceroll + sinal + mod + "], resultando um:";
+        document.getElementById("roll").innerHTML = `Você rolou ${qtd}d${dice}[${diceroll}${sinal}${mod}], resultando um:`;
         document.getElementById("resultado").innerHTML = "ERRO CRÍTICO!";               
         }
         else{
         document.getElementById("caixaResultado").style.backgroundColor = "white";
         document.getElementById("resultado").style.color = "black";
-        document.getElementById("roll").innerHTML = "Você rolou " + qtd + "d" + dice + "[" + diceroll + sinal + mod + "], resultando um:";
+        document.getElementById("roll").innerHTML = `Você rolou ${qtd}d${dice}[${diceroll}${sinal}${mod}], resultando um:`;
         document.getElementById("resultado").innerHTML = finalRoll;
         }    
     }
     else{
         document.getElementById("caixaResultado").style.backgroundColor = "white";
         document.getElementById("resultado").style.color = "black";
-        document.getElementById("roll").innerHTML = "Você rolou " + qtd + "d" + dice + "[" + diceroll + sinal + mod + "], resultando um:";
+        document.getElementById("roll").innerHTML = `Você rolou ${qtd}d${dice}[${diceroll}${sinal}${mod}], resultando um:`;
         document.getElementById("resultado").innerHTML = finalRoll; 
     }
 }

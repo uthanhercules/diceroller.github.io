@@ -55,6 +55,10 @@ main{
     background-color: white;
 }
 
+#roll{
+    text-align: center;
+}
+
 @media only screen and (min-width: 421px){
     #caixaResultado{
         display: flex;
@@ -76,6 +80,7 @@ main{
     #resultado{
         font-size: 24px;
         font-weight: bold;
+        text-align: center;
         color: black;
     }
 }
@@ -101,6 +106,7 @@ main{
     #resultado{
         font-size: 18px;
         font-weight: bold;
+        text-align: center;
         color: black;
     }
 }
