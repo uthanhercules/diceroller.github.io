@@ -8,11 +8,7 @@ Here are the technologies used in this project.
 * HTML 5
 * CSS 3
 * JavaScript
- 
-## Services Used
- 
-* Github
- 
+  
 ## Links
  
   - Link of deployed application: https://uthanhercules.github.io/diceroller.github.io
